@@ -20,5 +20,6 @@ func main() {
 		panic(err)
 	}
 	defer resp.Body.Close()
+	//pegar resultado do body para mostrar o resultado
 	io.Copy(os.Stdout, resp.Body)
 }
